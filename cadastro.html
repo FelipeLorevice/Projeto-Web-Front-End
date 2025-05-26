@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro - CODE LIVRE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="titulo-site">CODE LIVRE</h1>
+    <p class="subtitulo">Portal de cursos gratuitos de programação</p>
+  </header>
+
+  <div class="form-container">
+    <h2>Crie sua conta</h2>
+    <form action="login.html" method="get">
+      <label>Nome:
+        <input type="text" name="nome" required>
+      </label>
+      <label>Email:
+        <input type="email" name="email" required>
+      </label>
+      <label>Senha:
+        <input type="password" name="senha" required>
+      </label>
+      <label>Confirmar Senha:
+        <input type="password" name="confirmar" required>
+      </label>
+      <label>Área de Interesse:
+        <select name="area">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+          <option value="sql">SQL</option>
+        </select>
+      </label>
+      <button type="submit">Cadastrar</button>
+    </form>
+    <p class="login-link">Já tem conta? <a href="login.html">Faça login</a></p>
+  </div>
+
+</body>
+</html>
