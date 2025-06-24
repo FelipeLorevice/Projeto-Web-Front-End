@@ -1,12 +1,13 @@
-<!-- login.html -->
+<!-- admin.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Login - CODE LIVRE</title>
+  <title>Admin - CODE LIVRE</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/form.css">
+  <link rel="stylesheet" href="assets/css/admin.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,19 +27,26 @@
 
   <main class="main container">
     <section class="form-box">
-      <h2>Faça Login</h2>
-      <form action="index.html" method="get">
+      <h2>Painel Administrativo</h2>
+      <form id="admin-form">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
         <div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
         </div>
-        <div class="form-group">
-          <label for="senha">Senha</label>
-          <input type="password" id="senha" name="senha" required>
+        <div class="btn-group">
+          <button type="submit" class="btn">Cadastrar</button>
+          <button type="button" class="btn btn-clear" onclick="limparCampos()">Limpar Campos</button>
         </div>
-        <button type="submit" class="btn">Entrar</button>
       </form>
-      <p class="login-link">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+
+      <h3 class="list-title">Usuários Cadastrados</h3>
+      <input type="text" id="search" placeholder="Pesquisar por nome ou e-mail..." onkeyup="filtrarUsuarios()" class="search-box">
+      <ul id="lista-usuarios" class="user-list"></ul>
+      <button onclick="excluirTodos()" class="btn btn-danger">Excluir Todos</button>
     </section>
   </main>
 
@@ -47,5 +55,7 @@
       <p>&copy; 2025 CODE LIVRE | Todos os direitos reservados</p>
     </div>
   </footer>
+
+  <script src="assets/js/admin.js"></script>
 </body>
 </html>

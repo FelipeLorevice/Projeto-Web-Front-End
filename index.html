@@ -1,44 +1,63 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <title>CODE LIVRE - Portal Educacional</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-
-<header class="top-header">
-  <h1 class="titulo-site">CODE LIVRE</h1>
-</header>
-
-
-
-  <section class="card-container">
-    <div class="card">
-      <div class="card-img img1">
-      </div>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/allan-guilherme-de-oliveira-soares-de-souza-899078274/" target="_blank">Currículo de Allan</a></li>
-        <li><a href="https://www.linkedin.com/in/felipe-lorevice-b494372ab/" target="_blank">Currículo de Felipe</a></li>
-        <li><a href="https://www.linkedin.com/in/pedroaraujoboliveira/" target="_blank">Currículo de Pedro</a></li>
-      </ul>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">CODE LIVRE</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <div class="card">
-      <div class="card-img img2">
-        <h2>Cursos Livres</h2>
-      </div>
-      <ul>
-        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank">Curso em Vídeo</a></li>
-        <li><a href="https://www.alura.com.br/start" target="_blank">Alura Start</a></li>
-        <li><a href="https://dio.me" target="_blank">DIO</a></li>
-      </ul>
+  <main class="main container">
+    <section class="intro">
+      <h2>Educação Digital Acessível</h2>
+      <p>Bem-vindo ao CODE LIVRE! Um portal que reúne os melhores cursos gratuitos de programação para quem está começando na área de tecnologia.</p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <img src="assets/img/img1.png" alt="Equipe" class="card-img">
+        <h3>Sobre Nós</h3>
+        <p>Conheça os integrantes da nossa equipe e acesse seus currículos.</p>
+        <ul>
+          <li><a href="https://fzka.github.io/">Currículo de Allan</a></li>
+          <li><a href="#">Currículo de Felipe</a></li>
+          <li><a href="https://pedroaraujoboliveira.github.io/html-for-qa/">Currículo de Pedro</a></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <img src="assets/img/img2.png" alt="Cursos" class="card-img">
+        <h3>Cursos Recomendados</h3>
+        <p>Acesse as principais plataformas de cursos gratuitos:</p>
+        <ul>
+          <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank">Curso em Vídeo</a></li>
+          <li><a href="https://www.alura.com.br/start" target="_blank">Alura Start</a></li>
+          <li><a href="https://dio.me" target="_blank">DIO</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CODE LIVRE | Todos os direitos reservados</p>
     </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 CODE LIVRE | Todos os direitos reservados</p>
   </footer>
-
 </body>
 </html>
