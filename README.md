@@ -104,7 +104,7 @@ Você pode acessar o projeto diretamente pelo navegador através deste link:
 
 Abaixo está um exemplo visual da página inicial do projeto:
 
-![Página Inicial](../assets/img/pagina-inicial.png)
+![Página Inicial](./assets/img/pagina-inicial.png)
 
 > A imagem representa a tela principal com os cards de apresentação e links para currículos e cursos gratuitos.
 
