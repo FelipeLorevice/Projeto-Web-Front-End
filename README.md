@@ -88,7 +88,7 @@ Você pode acessar o projeto diretamente pelo navegador através deste link:
 
 2. Acesse a pasta do projeto:
    ```bash
-   cd code-livre
+   cd Projeto-Web-Front-End
 
 3. Abra o index.html no seu navegador.
 
