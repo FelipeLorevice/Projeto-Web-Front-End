@@ -95,7 +95,7 @@ Você pode acessar o projeto diretamente pelo navegador através deste link:
 ## 👨‍💻 Integrantes da Equipe
 
 - **Allan Guilherme** — [Currículo](https://fzka.github.io/)
-- **Felipe Lorevice** — [Currículo](#)
+- **Felipe Lorevice** — [Currículo](https://felipelorevice.github.io)
 - **Pedro Araujo Bueno de Oliveira** — [Currículo](https://pedroaraujoboliveira.github.io/html-for-qa/)
 
 ---
