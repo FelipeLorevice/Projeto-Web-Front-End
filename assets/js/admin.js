@@ -22,14 +22,14 @@ function renderizarUsuarios(filtro = '') {
 
   ordenados
     .filter(u => u.nome.toLowerCase().includes(filtro) || u.email.toLowerCase().includes(filtro))
-    .forEach((usuario, index) => {
+    .forEach((usuario) => {
       const li = document.createElement('li');
       li.innerHTML = `
         <div>
           <strong>${usuario.nome}</strong>
           <span>${usuario.email} - ${usuario.data}</span>
         </div>
-        <button class="btn-small" onclick="excluirUsuario(${index})">Excluir</button>
+        <button class="btn-small" onclick="excluirUsuario('${usuario.email}')">Excluir</button>
       `;
       lista.appendChild(li);
     });
@@ -71,10 +71,10 @@ function limparCampos() {
   emailInput.value = '';
 }
 
-// Exclui usuário individual
-function excluirUsuario(index) {
+// Exclui usuário individual com base no e-mail
+function excluirUsuario(email) {
   if (confirm('Deseja excluir este usuário?')) {
-    usuarios.splice(index, 1);
+    usuarios = usuarios.filter(u => u.email !== email);
     salvarUsuarios();
     renderizarUsuarios(searchInput.value.toLowerCase());
   }
